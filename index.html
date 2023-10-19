@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <center>
+    <h1>Cadastro e Pesquisa de Jogos</h1>
+    <div id="cadastro">
+        <h2>Cadastro de Jogo</h2>
+        <form id="cadastroForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="plataform">plataforma:</label>
+            <input type="text" id="plataform" name="plataform" required><br>
+
+            <button class="button" type="submit">Click Me</button>
+        </form>
+    </div>
+
+    <div id="pesquisa">
+        <h2>Pesquisa de Jogo</h2>
+        <form id="pesquisaForm">
+            <label for="searchId">ID do Jogo:</label>
+            <input type="text" id="searchId" name="searchId"><br>
+
+            <button class="button" type="button" onclick="pesquisarJogo()">Pesquisar</button>
+        </form>
+        <div id="resultadoPesquisa"></div>
+    </div>
+</center>
+</body>
+</html>
